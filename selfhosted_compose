@@ -64,13 +64,15 @@ services:
       - 6881:6881/udp
     restart: unless-stopped
     networks:
-      - arrs  emby:
+      - arrs
+      
+  emby:
     image: lscr.io/linuxserver/emby:latest
     container_name: emby
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Etc/UTC
+      - TZ=Europe/Amsterdam
     volumes:
       - /media/disks/ssd1/config/emby:/config
       - /media/disks/hdd1/media/data/media/tv:/data/tv
@@ -79,6 +81,8 @@ services:
       - 8096:8096
       - 8920:8920 #optional
     restart: unless-stopped
+    networks:
+      - arrs
       
 networks:
   arrs:
