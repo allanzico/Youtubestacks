@@ -1,0 +1,62 @@
+---
+- Management:
+    - Portainer:
+        icon: portainer.png
+        href: http://192.168.1.73:9443
+        description: Docker management
+        widget:
+          type: portainer
+          env: 2
+          url: https://192.168.1.73:9443
+          key: keykeykey
+- Media:
+    - Emby:
+        icon: emby.png
+        href: http://192.168.1.73:8096
+        description: Movies & TV Shows
+        widget:
+          type: emby
+          url: http://192.168.1.73:8096
+          key: keykeykey
+    - Radarr:
+        icon: radarr.png
+        href: http://192.168.1.73:7878
+        description: Movie management
+        widget:
+          type: radarr
+          url: http://192.168.1.73:7878
+          key: keykeykey
+    - Sonarr:
+        icon: sonarr.png
+        href: http://192.168.1.73:8989
+        description: Tv Shows management
+        widget:
+          type: sonarr
+          url: http://192.168.1.73:8989
+          key: keykeykey
+- Downloads:
+    - qBittorent:
+        icon: qbittorrent.png
+        href: http://192.168.1.73:8080
+        description: Download client
+        widget:
+          type: qbittorrent
+          url: http://192.168.1.73:8080
+          username: keykeykey
+          password: keykeykey
+    - prowlarr:
+        icon: prowlarr.png
+        href: http://192.168.1.73:9697
+        description: Indexer
+        widget:
+          type: prowlarr
+          url: http://192.168.1.73:9697
+          key: keykeykey
+    - jellyseerr:
+        icon: jellyseerr.png
+        href: http://192.168.1.73:5055
+        description: Media management
+        widget:
+          type: jellyseerr
+          url: http://192.168.1.73:5055
+          key: keykeykey
